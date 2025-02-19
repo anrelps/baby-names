@@ -75,13 +75,13 @@ li > button:active {
 }
 
 /* ##### Shortlist ##### */
-.short-list li:hover:before {
-    content: '\00D7';
+.short-list .remove-icon {
+    display: none;
     position: absolute;
     top: -0.5rem;
     right: -0.3rem;
-    width: 1rem;
-    height: 1rem;
+    width: 20px;
+    height: 20px;
     z-index: 2;
     text-align: center;
     line-height: 1;
@@ -92,7 +92,13 @@ li > button:active {
     border: solid 2px #fff;
     color: #fff;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
+
+.short-list li:hover .remove-icon {
+    display: block;
+}
+
 .short-list h2 {
     padding: 0;
     font-weight: 400;

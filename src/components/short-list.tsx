@@ -26,6 +26,7 @@ export function ShortList() {
                     <NamesList
                         namesList={shortListedNames}
                         onItemClick={removeFromShortList}
+                        isShortList={true}
                     />
 
                     <hr />
